@@ -2,11 +2,13 @@ import "./App.css";
 import { useState } from "react";
 import logo from "./assets/images/logo.png";
 import cartIcon from "./assets/icons/cart.png";
+import banner from "./assets/images/Banner.png";
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [error, setError] = useState("");
 
+  // discount form submit handler
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -55,8 +57,8 @@ function App() {
       </nav>
       {/* nav end */}
       {/* banner start */}
-      <section className="banner">
-        <img src="" alt="" />
+      <section className="banner_section">
+        <img src={banner} alt="banner" />
       </section>
       {/* banner end */}
 

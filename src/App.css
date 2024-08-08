@@ -68,6 +68,40 @@ nav ul li a:hover{
 }
 /* nav css end */
 
+/*  banner css start*/
+/* .banner_section{
+    width: 100%;
+    height: 720px;
+   
+}
+.banner_section img{
+    width: 100%;
+    height: 100%;
+} */
+
+.banner_section {
+    width: 100%;
+    height: 720px;
+    overflow: hidden; /* Ensures no scrollbars if the image overflows */
+    display: flex;
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    position: relative; /* Allows for absolute positioning inside the banner */
+}
+
+.banner_section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    position: absolute; /* Allows content to be layered on top */
+    top: 0;
+    left: 0;
+}
+
+
+
+/*  banner css end*/
+
 /* discount section css start */
 .discount_section{
     width: 100%;
