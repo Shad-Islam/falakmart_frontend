@@ -80,12 +80,49 @@ function App() {
             {/* footer right side start */}
 
             <div className="footer_top_right">
-              <div className="footer_information"></div>
-              <div className="footer_customer_service"></div>
-              <div className="footer_contacts"></div>
+              <div className="footer_information">
+                <ul className="footer_list">
+                  <li className="footer_top_right_heading">INFORMATION</li>
+                  <li className="footer_top_right_items">About Us</li>
+                  <li className="footer_top_right_items">Blog</li>
+                </ul>
+              </div>
+              <div className="footer_customer_service">
+                <ul className="footer_list">
+                  <li className="footer_top_right_heading">CUSTOMER SERVICE</li>
+                  <li className="footer_top_right_items">
+                    Cancellation policy
+                  </li>
+                  <li className="footer_top_right_items">Return Policy</li>
+                  <li className="footer_top_right_items">
+                    Shipping & Delivery
+                  </li>
+                  <li className="footer_top_right_items">Privacy Policy</li>
+                  <li className="footer_top_right_items">Terms & Conditions</li>
+                  <li className="footer_top_right_items">FAQ</li>
+                </ul>
+              </div>
+              <div className="footer_contacts">
+                <ul className="footer_list">
+                  <li className="footer_top_right_heading">CONTACTS</li>
+                  <li className="footer_top_right_items">Address</li>
+                  <li className="footer_top_right_items_white">
+                    Mohammadpur 1200
+                  </li>
+                  <li className="footer_top_right_items">Phone</li>
+                  <li className="footer_top_right_items_white">0131111111</li>
+                  <li className="footer_top_right_items">Email</li>
+                  <li className="footer_top_right_items_white">
+                    falakmart@gmail.com
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="footer_bottom"></div>
+          <hr />
+          <div className="footer_bottom">
+            <p>@All Rights Reserved Falakmart 2024</p>
+          </div>
         </div>
       </footer>
       {/* footer part end */}

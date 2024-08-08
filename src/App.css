@@ -23,7 +23,6 @@ header{
     display: flex;
     align-items: center;
     /* background-color: aqua; */
-
 }
 
 header .logo{
@@ -45,7 +44,6 @@ nav{
     height: 124.43px;
     background-color: #ffffff;
     box-shadow: 0px 0px 4.05px 0px #00000040;
-
 }
 
 nav ul{
@@ -144,20 +142,63 @@ footer .footer_top{
 }
 
 .footer_top_right{
-    width: 60%;
+    gap: 54px;
+    width: 50%;
     height: 100%;
+    display: flex;
+    padding-top: 65px;
     /* background-color: tomato; */
 }
+
+.footer_list{
+    list-style: none;
+
+}
+
+.footer_top_right_heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: Inter;
+    line-height: 24.2px;
+    margin-bottom: 16px;
+}
+
+.footer_top_right_items{
+    font-size: 20px;
+    color: #BDBBBC;
+    font-weight: 500;
+    font-family: Inter;
+    line-height: 24.2px;
+    margin-bottom: 10px;
+}
+
+.footer_top_right_items_white{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: Inter;
+    line-height: 24.2px;
+    margin-bottom: 10px;
+}
+
 .footer_information{}
 .footer_customer_service{}
 .footer_contacts{}
 
 footer .footer_bottom{
     height: 116px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 44px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Poppins;
     /* background-color: rgb(48, 89, 89); */
 
 }
 
 /* footer css end */
-
 
