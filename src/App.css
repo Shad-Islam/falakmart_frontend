@@ -71,4 +71,93 @@ nav ul li a:hover{
 }
 /* nav css end */
 
+/* footer css start */
+footer{
+    width: 100%;
+    height: 514px;
+    background-color:#00205B;
+}
+
+footer .footer_top{
+    display: flex;
+    height: 397px;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.footer_top_left{
+    width: 30%;
+    height: 100%;
+    /* background-color: orangered; */
+}
+
+.footer_details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: orange; */
+}
+.footer_logo{
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+}
+
+.footer_text{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #DBDBDB;
+    font-family: Inter;
+    margin-bottom: 36px;
+    line-height: 21.78px;
+}
+
+.footer_details ul{
+    gap: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.footer_details ul li a{
+    width: 22px;
+    height: 22px;
+    color: #ffffff;
+}
+.footer_details ul li a i{
+   width: 22px;
+   height: 22px;
+}
+
+.social_media_link{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    font-family: Inter;
+    line-height: 24.2px;
+    margin-bottom: 10px;
+}
+
+.footer_top_right{
+    width: 60%;
+    height: 100%;
+    /* background-color: tomato; */
+}
+.footer_information{}
+.footer_customer_service{}
+.footer_contacts{}
+
+footer .footer_bottom{
+    height: 116px;
+    /* background-color: rgb(48, 89, 89); */
+
+}
+
+/* footer css end */
+
 
