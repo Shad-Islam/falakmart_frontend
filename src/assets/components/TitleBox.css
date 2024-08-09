@@ -1,0 +1,28 @@
+.box-container {
+    width: 100%;
+    display: flex;
+    margin: 80px 0px;
+    align-items: center;
+  }
+  
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: #00205B; 
+    box-shadow: 0px 0px 23.99px 0px #00000040;
+
+  }
+  
+.box {
+    border: 1.5px solid #00205B;
+    border-top: 4px solid #00205B;
+    border-radius: 0px 52.14px 0px 52.14px;
+    padding: 23.25px 86.39px 21.57px 85.23px;
+  }
+  
+  .box p{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    font-family: Poppins;
+  }

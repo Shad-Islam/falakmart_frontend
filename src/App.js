@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "./assets/images/logo.png";
 import cartIcon from "./assets/icons/cart.png";
 import banner from "./assets/images/Banner.png";
+import TitleBox from "./assets/components/TitleBox";
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -61,6 +62,12 @@ function App() {
         <img src={banner} alt="banner" />
       </section>
       {/* banner end */}
+
+      {/* title box start  */}
+      <div className="container">
+        <TitleBox text="New Arrivals"/>
+      </div>
+      {/* title box end */}
 
       {/* discount section start  */}
       <div className="container">
