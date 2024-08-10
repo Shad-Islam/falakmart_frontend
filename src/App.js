@@ -3,7 +3,7 @@ import { useState } from "react";
 import logo from "./assets/images/logo.png";
 import cartIcon from "./assets/icons/cart.png";
 import banner from "./assets/images/Banner.png";
-import TitleBox from "./assets/components/TitleBox";
+import TitleBox from "./components/TitleBox";
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
