@@ -1,5 +1,5 @@
 import React from "react";
-import "./TitleBox.css";
+import "./style/TitleBox.css";
 
 function TitleBox(props) {
   return (

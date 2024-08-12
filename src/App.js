@@ -1,9 +1,10 @@
 import "./App.css";
 import { useState } from "react";
 import logo from "./assets/images/logo.png";
+import TitleBox from "./components/TitleBox";
 import cartIcon from "./assets/icons/cart.png";
 import banner from "./assets/images/Banner.png";
-import TitleBox from "./components/TitleBox";
+import ImageSlider from "./components/ImageSlider";
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -65,9 +66,13 @@ function App() {
 
       {/* title box start  */}
       <div className="container">
-        <TitleBox text="New Arrivals"/>
+        <TitleBox text="New Arrivals" />
       </div>
       {/* title box end */}
+
+      {/* image slider start  */}
+      <ImageSlider />
+      {/* image slider end */}
 
       {/* discount section start  */}
       <div className="container">
