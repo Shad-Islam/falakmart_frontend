@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
 import cartIcon from "../../assets/icons/cart.png";
+import Navbar from "../../components/Navbar";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         </header>
         {/* header end */}
       </div>
+      <Navbar />
     </div>
   );
 }

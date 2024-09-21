@@ -34,25 +34,7 @@ function App() {
       <Home />
 
       {/* nav start */}
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">New Arrivals</a>
-          </li>
-          <li>
-            <a href="#">Trending</a>
-          </li>
-          <li>
-            <a href="#">All Brands</a>
-          </li>
-          <li>
-            <a href="#">All Catagories</a>
-          </li>
-        </ul>
-      </nav>
+      
       {/* nav end */}
       {/* banner start */}
       <section className="banner_section">
