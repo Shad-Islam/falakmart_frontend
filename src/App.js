@@ -6,6 +6,7 @@ import TitleBox from "./components/TitleBox";
 import cartIcon from "./assets/icons/cart.png";
 import banner from "./assets/images/Banner.png";
 import ImageSlider from "./components/ImageSlider";
+import Home from "./pages/home/Home";
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -30,14 +31,8 @@ function App() {
 
   return (
     <>
-      <div className="container">
-        {/* header start */}
-        <header>
-          <img className="logo" src={logo} alt="Logo" />
-          <img className="cart_icon" src={cartIcon} alt="Logo" />
-        </header>
-        {/* header end */}
-      </div>
+      <Home />
+
       {/* nav start */}
       <nav>
         <ul>
