@@ -37,9 +37,7 @@ function App() {
       
       {/* nav end */}
       {/* banner start */}
-      <section className="banner_section">
-        <img src={banner} alt="banner" />
-      </section>
+     
       {/* banner end */}
 
       {/* title box start  */}
