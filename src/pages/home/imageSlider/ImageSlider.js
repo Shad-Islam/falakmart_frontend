@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./style/ImageSlider.css";
 
 const images = [
-  require("../assets/images/red.jpg"),
-  require("../assets/images/blue.jpg"),
-  require("../assets/images/black.webp"),
+  require("../../../assets/images/red.jpg"),
+  require("../../../assets/images/blue.jpg"),
+  require("../../../assets/images/black.webp"),
 ];
 
 function ImageSlider() {
@@ -42,4 +42,3 @@ function ImageSlider() {
 }
 
 export default ImageSlider;
-

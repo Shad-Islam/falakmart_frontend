@@ -1,11 +1,6 @@
 import "./App.css";
 import { useState } from "react";
 import Footer from "./components/Footer";
-import logo from "./assets/images/logo.png";
-import TitleBox from "./components/TitleBox";
-import cartIcon from "./assets/icons/cart.png";
-import banner from "./assets/images/Banner.png";
-import ImageSlider from "./components/ImageSlider";
 import Home from "./pages/home/Home";
 
 function App() {
@@ -33,21 +28,10 @@ function App() {
     <>
       <Home />
 
-      {/* nav start */}
-      
-      {/* nav end */}
-      {/* banner start */}
      
-      {/* banner end */}
-
-      {/* title box start  */}
-      <div className="container">
-        <TitleBox text="New Arrivals" />
-      </div>
-      {/* title box end */}
 
       {/* image slider start  */}
-      <ImageSlider />
+      {/* <ImageSlider /> */}
       {/* image slider end */}
 
       {/* discount section start  */}
