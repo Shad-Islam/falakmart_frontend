@@ -1,15 +1,29 @@
-import "./App.css";
-import Footer from "./components/Footer";
-import Home from "./pages/home/Home";
+import React from "react";
+import { useState } from "react";
+import "./style/DiscountSection.css";
 
-function App() {
-  
+function DiscountSection() {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [error, setError] = useState("");
 
+  // discount form submit handler
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const isNumeric = /^\d+$/.test(phoneNumber);
+
+    if (!isNumeric) {
+      setError("Please enter a valid phone number");
+      return;
+    }
+
+    console.log("Phone number submitted:", phoneNumber);
+
+    setPhoneNumber("");
+    setError("");
+  };
   return (
     <>
-      <Home />
-
-      {/* discount section start 
       <div className="container">
         <section className="discount_section">
           <h3 className="discount_section_heading">Get Discount</h3>
@@ -35,15 +49,9 @@ function App() {
             </button>
           </form>
         </section>
-      </div> */}
-
-      {/* discount section end  */}
-
-      {/* footer part start */}
-      <Footer />
-      {/* footer part end */}
+      </div>
     </>
   );
 }
 
-export default App;
+export default DiscountSection;

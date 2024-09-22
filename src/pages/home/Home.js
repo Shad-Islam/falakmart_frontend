@@ -1,10 +1,10 @@
 import React from "react";
-
 import Navbar from "../../components/Navbar";
 import Header from "../../components/Header";
 import Banner from "./banner/Banner";
 import TitleBox from "../../components/TitleBox";
-import ImageSlider from "./imageSlider/ImageSlider";
+import ImageSlider from "./image Slider/ImageSlider";
+import DiscountSection from "./discount section/DiscountSection";
 
 function Home() {
   return (
@@ -18,6 +18,7 @@ function Home() {
       </div>
       {/* title box end */}
       <ImageSlider />
+      <DiscountSection />
     </>
   );
 }
