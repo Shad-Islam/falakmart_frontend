@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Banner from "./banner/Banner";
 import TitleBox from "../../components/TitleBox";
 import ImageSlider from "./image Slider/ImageSlider";
+import FeaturedProducts from "./featured-product/FeaturedProducts";
 import DiscountSection from "./discount section/DiscountSection";
 import Footer from "../../components/Footer";
 
@@ -19,6 +20,7 @@ function Home() {
       </div>
       {/* title box end */}
       <ImageSlider />
+      <FeaturedProducts />
       <DiscountSection />
       <Footer />
     </>
