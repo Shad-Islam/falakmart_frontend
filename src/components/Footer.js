@@ -77,8 +77,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr />
         <div className="footer_bottom">
+          <hr />
           <p>@All Rights Reserved Falakmart 2024</p>
         </div>
       </div>
