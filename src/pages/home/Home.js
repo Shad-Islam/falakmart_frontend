@@ -8,6 +8,7 @@ import FeaturedProducts from "./featured-product/FeaturedProducts";
 import DiscountSection from "./discount section/DiscountSection";
 import Footer from "../../components/Footer";
 import LiveUpdate from "./live-update/LiveUpdate";
+import RecentLive from "./recent-live/RecentLive";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
       {/* title box end */}
       <ImageSlider />
       <LiveUpdate />
+      <RecentLive />
       <FeaturedProducts />
       <DiscountSection />
       <Footer />
