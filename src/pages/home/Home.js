@@ -7,6 +7,7 @@ import ImageSlider from "./image Slider/ImageSlider";
 import FeaturedProducts from "./featured-product/FeaturedProducts";
 import DiscountSection from "./discount section/DiscountSection";
 import Footer from "../../components/Footer";
+import LiveUpdate from "./live-update/LiveUpdate";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       </div>
       {/* title box end */}
       <ImageSlider />
+      <LiveUpdate />
       <FeaturedProducts />
       <DiscountSection />
       <Footer />
