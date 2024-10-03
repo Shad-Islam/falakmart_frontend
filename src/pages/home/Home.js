@@ -6,6 +6,7 @@ import TitleBox from "../../components/TitleBox";
 import ImageSlider from "./image Slider/ImageSlider";
 import DiscountSection from "./discount section/DiscountSection";
 import Footer from "../../components/Footer";
+import AllBrand from "./all brand/AllBrand";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       </div>
       {/* title box end */}
       <ImageSlider />
+      <AllBrand />
       <DiscountSection />
       <Footer />
     </>
