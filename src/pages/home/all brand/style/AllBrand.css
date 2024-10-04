@@ -1,4 +1,4 @@
-.brands{
+ /* .brands{
     width: 100%;
     gap: 30px;
     display: flex;
@@ -8,16 +8,66 @@
     align-items: center;
     margin-bottom: 100px; 
     justify-content: space-between;
-    animation: scroll 20s linear infinite;
+    animation: brands 20s linear infinite;
 
 }
 
 
-@keyframes scroll {
+@keyframes brands {
     0% {
-      transform: translateX(100%); /* Start from the right */
+      transform: translateX(100%); 
     }
     100% {
-      transform: translateX(-100%); /* Move to the left */
+      transform: translateX(-100%); 
+    }
+}
+
+
+
+ */
+
+
+ /* Prevent horizontal scrolling on the body */
+
+
+.brands {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-wrap: nowrap; /* Ensures the brand items stay on a single line */
+    overflow: hidden;
+    white-space: nowrap; /* Prevents items from wrapping to a new line */
+    align-items: center;
+    margin-bottom: 100px; 
+    justify-content: flex-start; /* Changed from space-between to flex-start for better scrolling */
+    animation: brands 20s linear infinite;
+}
+
+.brand-item img {
+    max-width: 150px; /* Adjusted size for desktop view */
+    height: auto;
+}
+
+/* Responsive Styles for Mobile (450px and below) */
+@media (max-width: 450px) {
+  .brands {
+    gap: 10px; /* Reduced gap for smaller screens */
+    flex-wrap: nowrap; /* Ensure items stay in one line */
+    justify-content: flex-start; /* Ensure alignment starts from the left */
+    animation: brands 25s linear infinite; /* Slowed animation for mobile screens */
+  }
+
+  .brand-item img {
+    max-width: 100px; /* Set max width for images to 100px as requested */
+    height: auto;
+  }
+}
+
+@keyframes brands {
+    0% {
+      transform: translateX(100%); /* Start slightly off the screen */
+    }
+    100% {
+      transform: translateX(-100%); /* Scroll to the left */
     }
 }

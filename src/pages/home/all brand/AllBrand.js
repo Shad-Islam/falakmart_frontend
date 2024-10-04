@@ -8,8 +8,6 @@ import gulljee from "../../../assets/images/brands-logo/gulljee 1.png";
 import iznik from "../../../assets/images/brands-logo/iznik 1.png";
 import khoobsurat from "../../../assets/images/brands-logo/khoobsurat 1.png";
 
-
-
 function AllBrand() {
   return (
     <>
