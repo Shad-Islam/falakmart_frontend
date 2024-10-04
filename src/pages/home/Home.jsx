@@ -13,7 +13,7 @@ import RecentLive from "./recent-live/RecentLive";
 function Home() {
   return (
     <>
-      <Header />
+      <Header showArrowIcon={false} />
       <Navbar />
       <Banner />
       {/* title box start  */}
