@@ -1,14 +1,29 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./style/ImageSlider.css";
-
-const images = [
-  require("../../../assets/images/red.jpg"),
-  require("../../../assets/images/blue.jpg"),
-  require("../../../assets/images/black.webp"),
-];
 
 function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const response = await axios.get("http://localhost:8001/api/products");
+        const products = response.data;
+        // Extract image URLs from products
+        const extractedImages = products.flatMap((product) =>
+          product.product_images.map((image) => image.url)
+        );
+        setImages(extractedImages);
+        console.log(extractedImages);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+
+    fetchImages();
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,7 +35,7 @@ function ImageSlider() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [images]);
 
   return (
     <div className="slider-container">
@@ -32,7 +47,7 @@ function ImageSlider() {
           <img
             key={index}
             src={image}
-            alt={`Slide ${index}`}
+            alt={`Slide ${image}`}
             className="slider-image"
           />
         ))}
