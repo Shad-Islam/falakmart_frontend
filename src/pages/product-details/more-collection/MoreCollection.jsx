@@ -1,18 +1,20 @@
 import React from "react";
-import "./RelatedProducts.css";
+import "./MoreCollection.css";
 import { productImages } from "../../../assets/images";
 import TitleWithPriceCard from "../../../components/TitleWithPriceCard";
-export default function RelatedProducts() {
+
+export default function MoreCollection() {
   let Images;
-  if (productImages.length > 4) {
-    Images = productImages.slice(0, 4);
+  if (productImages.length > 8) {
+    Images = productImages.slice(4, 8);
   } else {
     Images = productImages;
   }
   return (
-    <div id="related-product-container">
-      <div id="related-product-text">Related Product</div>
-      <div id="related-product-div">
+    <div id="more-collection-container">
+      <div id="more-collection-text">More from the Selected Product</div>
+      <div id="more-collection-div">
+        {" "}
         {Images.map((item, index) => (
           <TitleWithPriceCard
             productName={item.product_name}
