@@ -6,6 +6,10 @@ import product3 from "./featured-products/product3.png";
 import product4 from "./featured-products/product4.png";
 import product5 from "./featured-products/product5.png";
 
+// Product details images
+import image1 from "./product-details-images/image1.png";
+import image2 from "./product-details-images/image2.png";
+
 export const productImages = [
   {
     product_name: "ZIVA Embroidered Lawn’24 3-Piece",
@@ -59,3 +63,5 @@ export const productImages = [
     price: 2700,
   },
 ];
+
+export const productDetailsImages = [image1, image2];

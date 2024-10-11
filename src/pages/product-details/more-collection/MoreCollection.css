@@ -1,0 +1,26 @@
+#more-collection-container {
+  width: 100%;
+  margin: 40px 0px;
+}
+
+#more-collection-text {
+  width: 420px;
+  height: 40px;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#more-collection-div {
+  width: 100%;
+  min-height: 570px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 0px 20px;
+  background-color: #c0eaff66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
