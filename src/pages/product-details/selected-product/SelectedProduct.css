@@ -1,0 +1,177 @@
+#selected-product-container {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  margin-top: 50px;
+}
+
+#images-div {
+  width: 45%;
+  height: 100%;
+}
+#focused-image-div {
+  width: 525px;
+  height: 696px;
+  margin-bottom: 25px;
+}
+
+#focused-image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#image-list-div {
+  width: 420px;
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.image-list {
+  width: 200px;
+  height: 100%;
+}
+
+.image-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Details CSS */
+#product-details-div {
+  width: 55%;
+  height: 100%;
+}
+
+#sp-product-name {
+  width: 330px;
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+#sp-shipping-estimation {
+  width: 300px;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+#sp-price-info {
+  width: 400px;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+#sp-price {
+  width: 75px;
+  height: 40px;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+#sp-amount {
+  width: 140px;
+  height: 40px;
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #e0004d;
+}
+
+#sp-btns {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#sp-add-to-cart {
+  width: 185px;
+  height: 50px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #00205b;
+  border-radius: 3px;
+  border: 3px solid #00205b;
+  cursor: pointer;
+}
+
+#sp-add-to-cart img {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+
+#sp-buy-now {
+  width: 185px;
+  height: 50px;
+  background: #00205b;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#sp-devider {
+  width: 100%;
+  border-top: 1px solid rgb(170, 167, 167);
+  margin-bottom: 30px;
+}
+
+#sp-description {
+  width: 120px;
+  height: 30px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#sp-description img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  position: relative;
+  top: 7px;
+  cursor: pointer;
+}
+
+#sp-description-content {
+  width: 100%;
+  background: #e4f6ff;
+  min-height: 50px;
+  position: relative;
+}
+
+#sp-description-content img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
