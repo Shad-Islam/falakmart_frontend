@@ -4,13 +4,16 @@ import Header from "../../components/Header";
 import Banner from "./banner/Banner";
 import TitleBox from "../../components/TitleBox";
 import ImageSlider from "./image Slider/ImageSlider";
+import FeaturedProducts from "./featured-product/FeaturedProducts";
 import DiscountSection from "./discount section/DiscountSection";
 import Footer from "../../components/Footer";
+import LiveUpdate from "./live-update/LiveUpdate";
+import RecentLive from "./recent-live/RecentLive";
 
 function Home() {
   return (
     <>
-      <Header />
+      <Header showArrowIcon={false} />
       <Navbar />
       <Banner />
       {/* title box start  */}
@@ -19,6 +22,9 @@ function Home() {
       </div>
       {/* title box end */}
       <ImageSlider />
+      <LiveUpdate />
+      <RecentLive />
+      <FeaturedProducts />
       <DiscountSection />
       <Footer />
     </>
