@@ -24,6 +24,7 @@ export default function FeaturedProducts() {
       <div id="featured-product-container">
         {Images.map((item, index) => (
           <FeaturedProductCard
+            id={item.id}
             productName={item.product_name}
             productImages={item.product_image}
             price={item.price}
