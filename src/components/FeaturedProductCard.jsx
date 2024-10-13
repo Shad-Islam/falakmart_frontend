@@ -2,14 +2,14 @@ import React from "react";
 import "./style/FeaturedproductCard.css";
 
 export default function FeaturedProductCard({
-  productImages,
+  productImage,
   price,
   productName,
 }) {
   return (
     <div id="featured-card">
       <div id="product-image-div">
-        <img src={productImages} alt="dress1" />
+        <img src={productImage} alt="dress1" />
       </div>
       <div id="product-name"> {productName}</div>
       <div id="price-and-cart-div">

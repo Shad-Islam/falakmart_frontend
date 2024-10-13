@@ -13,7 +13,7 @@ import image2 from "./product-details-images/image2.png";
 export const productImages = [
   {
     product_name: "ZIVA Embroidered Lawn’24 3-Piece",
-    product_image: product1,
+    product_image: "http://127.0.0.1:8000/media/LALAM_01-0.jpg",
     price: 2500,
   },
   {
