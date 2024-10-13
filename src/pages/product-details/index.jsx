@@ -7,8 +7,10 @@ import MoreCollection from "./more-collection/MoreCollection";
 import RelatedProducts from "./related-product/RelatedProducts";
 
 import { productDetailsImages } from "../../assets/images";
+import { useParams } from "react-router-dom";
 
 export default function PrductDetails() {
+  const { id } = useParams();
   return (
     <>
       <Header showArrowIcon={true} />
