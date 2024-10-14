@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style/ImageSlider.css";
+import TitleBox from "../../../components/TitleBox";
 
 const images = [
   require("../../../assets/images/new-arrivel-carousel/LALAM 00.jpg"),
@@ -25,6 +26,10 @@ function ImageSlider() {
   };
 
   return (
+   <>
+     <div className="container">
+     <TitleBox text="New Arrivals" />
+   </div>
     <div className="slider-container">
       <Slider {...settings}>
         {images.map((image, index) => (
@@ -34,6 +39,7 @@ function ImageSlider() {
         ))}
       </Slider>
     </div>
+    </>
   );
 }
 
