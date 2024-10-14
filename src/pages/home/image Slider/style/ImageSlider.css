@@ -1,28 +1,10 @@
- .slider-container {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    width: 100%;
-    
-  }
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+}
 
-  
-  .slider-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-
-  /* .slider:nth-child(2) {
-    transform: translateX(100%);
-}  */
-
-
-
+.slider-image {
+  width: 100%;
+  height: 800px;
+  object-fit: fill;
+}

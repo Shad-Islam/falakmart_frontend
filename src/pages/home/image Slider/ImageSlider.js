@@ -1,42 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./style/ImageSlider.css";
 
 const images = [
-  require("../../../assets/images/red.jpg"),
-  require("../../../assets/images/blue.jpg"),
-  require("../../../assets/images/black.webp"),
+  require("../../../assets/images/new-arrivel-carousel/LALAM 00.jpg"),
+  require("../../../assets/images/new-arrivel-carousel/LALAM 01.jpg"),
+  require("../../../assets/images/new-arrivel-carousel/LALAM 02.jpg"),
+  require("../../../assets/images/new-arrivel-carousel/LALAM 03.jpg"),
+  require("../../../assets/images/new-arrivel-carousel/LALAM 04.jpg"),
 ];
 
 function ImageSlider() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 2000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: false,
+  };
 
   return (
     <div className="slider-container">
-      <div
-        className="slider"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
+      <Slider {...settings}>
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Slide ${index}`}
-            className="slider-image"
-          />
+          <div key={index}>
+            <img src={image} alt={`Slide ${index}`} className="slider-image" />
+          </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 }
