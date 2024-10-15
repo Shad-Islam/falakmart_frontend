@@ -9,7 +9,10 @@ export default function FeaturedProductCard({
   productName,
 }) {
   return (
-    <Link to={`/product/${id}`} style={{ textDecoration: "none" }}>
+    <Link
+      to={`/product/${id}`}
+      style={{ textDecoration: "none", color: "black" }}
+    >
       <div id="featured-card">
         <div id="product-image-div">
           <img src={productImages} alt="dress1" />
